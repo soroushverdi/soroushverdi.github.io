@@ -9,12 +9,12 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Soroush Verdi"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+name                     : &name "Soroush Verdi"
+description              : &description "PhD Candidate in Marketing"
+url                      : https://soroushverdi.science
+baseurl                  : ""
 repository               : "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "Soroush Verdi"
+  pronouns         : # example: "He/his"  
+  bio              : "PhD Candidate in Marketing at the University of Groningen"
+  location         : "Groningen, Netherlands"
+  employer         : "University of Groningen"
+  uri              : https://soroushverdi.science
+  email            : "s.verdi@rug.nl" 
 
   # Academic websites
   academia         : # URL
