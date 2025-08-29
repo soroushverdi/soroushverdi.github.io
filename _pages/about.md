@@ -14,7 +14,7 @@ I hold a Research Master’s degree in Economics and Business from the Universit
 
 Working Papers:
 ------
-Verdi, S., Moeini-Jazani, M., & Schwarz, N. (2025). *The cost of transparency: How AI disclosure reduces climate risk perceptions and support for environmental charities* (Working paper, <span style="color:blue">in preparation for submission to the Journal of the Academy of Marketing Science</span>).
+**Verdi, S.**, Moeini-Jazani, M., & Schwarz, N. (2025). *The cost of transparency: How AI disclosure reduces climate risk perceptions and support for environmental charities* (Working paper, <span style="color:blue">in preparation for submission to the Journal of the Academy of Marketing Science</span>).
 
 
 Ongoning Projects:
@@ -44,9 +44,9 @@ Research Methods for IB (BSc in International Business - University of Groningen
 Conferences and Talks:
 ------
 
-**August 2025** - European Association for Decision Making SPUDM - Lucca, Italy - *Research Presented*
+**Aug. 2025** - European Association for Decision Making SPUDM - Lucca, Italy - *Research Presented*
 
-**June 2025** - EMAC (European Marketing Academy) - Madrid, Spain - *Research Presented*
+**Jun. 2025** - EMAC (European Marketing Academy) - Madrid, Spain - *Research Presented*
 
-**April 2025** - PhD Conference, Faculty of Economics and Business, University of Groningen - Groningen, Netherlands - *Research Presented*
+**Apr. 2025** - PhD Conference, Faculty of Economics and Business, University of Groningen - Groningen, Netherlands - *Research Presented*
 
