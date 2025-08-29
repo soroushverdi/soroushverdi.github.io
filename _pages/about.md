@@ -45,5 +45,8 @@ Conferences and Talks:
 ------
 
 **August 2025** - European Association for Decision Making SPUDM - Lucca, Italy - *Research Presented*
+
 **June 2025** - EMAC (European Marketing Academy) - Madrid, Spain - *Research Presented*
+
 **April 2025** - PhD Conference, Faculty of Economics and Business, University of Groningen - Groningen, Netherlands - *Research Presented*
+
