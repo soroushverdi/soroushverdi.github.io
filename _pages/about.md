@@ -21,7 +21,7 @@ Ongoning Projects:
 ------
 1 - Shifts in people’s judgments of AI-created outcome. *Two studies completed. Data collection ongoing.*
 
-2 - To use or not to use AI. *Two studies completed. Conceptualization ongoing*
+2 - To use or not to use AI. *Conceptualization ongoing*
 
 
 Teaching:
