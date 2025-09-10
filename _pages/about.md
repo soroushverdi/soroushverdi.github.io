@@ -14,7 +14,7 @@ I hold a Research Master’s degree in Economics and Business from the Universit
 
 Working Papers:
 ------
-**Verdi, S.**, Moeini-Jazani, M., & Schwarz, N. (2025). *The cost of transparency: How AI disclosure reduces climate risk perceptions and support for environmental charities* (Working paper, <span style="color:blue">in preparation for submission to the **Journal of the Academy of Marketing Science**</span>).
+**Verdi, S.**, Moeini-Jazani, M., & Schwarz, N. (2025). *The cost of transparency: How AI disclosure on climate appeals reduces climate risk perceptions and support for environmental charities* (Working paper, <span style="color:blue">in preparation for submission to the **Journal of the Academy of Marketing Science**</span>).
 
 
 Ongoning Projects:
