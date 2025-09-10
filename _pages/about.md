@@ -27,19 +27,23 @@ Teaching:
 
 **2025-26 Academic Year**
 
-Building Brands for Impact (MSc Marketing Management - University of Groningen)
-Marketing for E&BE (BSc in Economics and Business Economics - University of Groningen)
-BSc Thesis Supervision (BSc in International Business - University of Groningen)
+1 - Building Brands for Impact (MSc Marketing Management - University of Groningen)
+
+2 - Marketing for E&BE (BSc in Economics and Business Economics - University of Groningen)
+
+3 - BSc Thesis Supervision (BSc in International Business - University of Groningen)
 
 **2024-25 Academic Year**
 
-Building Brands for Impact (MSc Marketing Management - University of Groningen)
-Marketing for E&BE (BSc in Economics and Business Economics - University of Groningen)
-BSc Thesis Supervision (BSc in International Business - University of Groningen)
+1 - Building Brands for Impact (MSc Marketing Management - University of Groningen)
+
+2 - Marketing for E&BE (BSc in Economics and Business Economics - University of Groningen)
+
+3 - BSc Thesis Supervision (BSc in International Business - University of Groningen)
 
 **2023-24 Academic Year**
 
-Research Methods for IB (BSc in International Business - University of Groningen)
+1 - Research Methods for IB (BSc in International Business - University of Groningen)
 
 Conferences and Talks:
 ------
