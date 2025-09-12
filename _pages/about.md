@@ -17,7 +17,7 @@ Working Papers:
 **Verdi, S.**, Moeini-Jazani, M., & Schwarz, N. *The cost of transparency: How AI disclosure on climate appeals reduces climate risk perceptions and support for environmental charities* (Working paper, <span style="color:blue">in preparation for submission to the **Journal of the Academy of Marketing Science**</span>).
 
 
-Ongoning Projects:
+Ongoing Projects:
 ------
 1 - Shifts in people’s judgments of AI-created outcome. *Two studies completed. Data collection ongoing.*
 
