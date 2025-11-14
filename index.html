@@ -207,17 +207,17 @@
         <ul class="clean">
           <li>
             <div class="paper">
-              <div class="title">Building Brands for Impact - University of Groningen (MSc Marketing Management)</div>
+              <div class="title">Building Brands for Impact - <em>University of Groningen</em> (MSc Marketing Management)</div>
             </div>
           </li>
           <li>
             <div class="paper">
-              <div class="title">Marketing for E&BE - University of Groningen (BSc Economics and Business Economics)</div>
+              <div class="title">Marketing for E&BE - <em>University of Groningen</em> (BSc Economics and Business Economics)</div>
             </div>
           </li>
           <li>
             <div class="paper">
-              <div class="title">Thesis Supervision (MSc and BSc students)</div>
+              <div class="title">Thesis Supervision - <em>University of Groningen</em> (MSc and BSc students)</div>
             </div>
           </li>
         </ul>
@@ -231,7 +231,7 @@
         
           <li>
             <div class="paper">
-              <div class="title">Research Methodology for IB (BSc International Business, 2024)</div>
+              <div class="title">Research Methodology for IB - <em>University of Groningen</em> (BSc International Business, 2024)</div>
             </div>
           </li>
         </ul>
@@ -260,10 +260,10 @@
       routes.forEach(id => { sections[id].hidden = id !== route; });
       tabs.forEach(t => t.setAttribute('aria-current', t.getAttribute('href') === `#/${route}` ? 'page' : 'false'));
       document.title = {
-        home: 'Prof. Your Name — Academic Website',
-        research: 'Research & Publications — Prof. Your Name',
-        teaching: 'Teaching — Prof. Your Name'
-      }[route] || 'Prof. Your Name';
+        home: 'Soroush Verdi — Academic Website',
+        research: 'Research & Publications — Soroush Verdi',
+        teaching: 'Teaching — Soroush Verdi'
+      }[route] || 'Soroush Verdi';
       // Accessibility: move focus to main when route changes
       document.getElementById('app').focus();
     }
