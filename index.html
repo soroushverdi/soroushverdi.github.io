@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soroush Verdi — Home</title>
-  <meta name="description" content="Soroush Verdi Website." />
+  <meta name="description" content="Minimal, accessible academic website for Home, Research & Publications, and Teaching." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -121,6 +121,11 @@
       .card { box-shadow: none; }
       a { text-decoration: none; }
     }
+      /* ===== Bio layout ===== */
+    .bio { display: grid; gap: 16px; align-items: start; }
+    @media (min-width: 720px) { .bio { grid-template-columns: 1fr auto; } }
+    .bio-photo { width: 220px; max-width: 40vw; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+    @media (min-width: 1024px) { .bio-photo { width: 260px; } }
   </style>
 </head>
 <body>
@@ -146,23 +151,26 @@
   <main class="wrap" id="app" tabindex="-1">
 
     <!-- ===== HOME ===== -->
-    <section id="home" hidden>
-      <div class="grid">
-        <div class="card">
+    
           <h2><span style="white-space:nowrap">Bio</span></h2>
-          <p class="muted">I am a PhD Candidate in Marketing at the University of Groningen. My work lies at the intersection of behavioral science and judgment and decision-making. I’m particularly interested in how people think about value, how they interpret prices, justify spending, respond to incentives, and make sense of what feels fair or worthwhile. I study the psychological biases and mental shortcuts that guide these decisions and explore why people sometimes make choices that seem inconsistent or even irrational on the surface.</p>
-          <p class="muted">I hold a Research Master’s degree in Economics and Business from the University of Groningen. I also contribute to teaching at both the Bachelor's and Master's levels within the Faculty of Economics and Business.</p>
-          <div class="space"></div>
-          <div class="row">
-            <a class="pill" href="mailto:s.verdi@rug.nl" aria-label="Email">✉️ <span>s.verdi@rug.nl</span></a>
-            <a class="pill" href="https://www.linkedin.com/in/soroushverdi/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" focusable="false">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.944v5.662H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.268 2.371 4.268 5.457v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.998 20.452H3.673V9h3.325v11.452z"/>
-              </svg>
-              <span>LinkedIn</span>
-            </a>
+          <div class="bio">
+            <div class="bio-text">
+              <p class="muted">I am a PhD Candidate in Marketing at the University of Groningen. My work lies at the intersection of behavioral science and judgment and decision-making. I’m particularly interested in how people think about value, how they interpret prices, justify spending, respond to incentives, and make sense of what feels fair or worthwhile. I study the psychological biases and mental shortcuts that guide these decisions and explore why people sometimes make choices that seem inconsistent or even irrational on the surface.</p>
+              <p class="muted">I hold a Research Master’s degree in Economics and Business from the University of Groningen. I also contribute to teaching at both the Bachelor's and Master's levels within the Faculty of Economics and Business.</p>
+              <div class="space"></div>
+              <div class="row">
+                <a class="pill" href="mailto:s.verdi@rug.nl" aria-label="Email">✉️ <span>s.verdi@rug.nl</span></a>
+                <a class="pill" href="https://www.linkedin.com/in/soroushverdi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" focusable="false">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.944v5.662H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.268 2.371 4.268 5.457v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.998 20.452H3.673V9h3.325v11.452z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+            <img class="bio-photo" src="assets/avatar.jpg" alt="Portrait of Soroush Verdi" loading="lazy" />
           </div>
-        </div>
+        
       </div>
 
       <div class="space"></div>
@@ -207,17 +215,17 @@
         <ul class="clean">
           <li>
             <div class="paper">
-              <div class="title">Building Brands for Impact - <em>University of Groningen</em> (MSc Marketing Management)</div>
+              <div class="title">Building Brands for Impact - University of Groningen (MSc Marketing Management)</div>
             </div>
           </li>
           <li>
             <div class="paper">
-              <div class="title">Marketing for E&BE - <em>University of Groningen</em> (BSc Economics and Business Economics)</div>
+              <div class="title">Marketing for E&BE - University of Groningen (BSc Economics and Business Economics)</div>
             </div>
           </li>
           <li>
             <div class="paper">
-              <div class="title">Thesis Supervision - <em>University of Groningen</em> (MSc and BSc students)</div>
+              <div class="title">Thesis Supervision (MSc and BSc students)</div>
             </div>
           </li>
         </ul>
@@ -231,7 +239,7 @@
         
           <li>
             <div class="paper">
-              <div class="title">Research Methodology for IB - <em>University of Groningen</em> (BSc International Business, 2024)</div>
+              <div class="title">Research Methodology for IB (BSc International Business, 2024)</div>
             </div>
           </li>
         </ul>
@@ -260,10 +268,10 @@
       routes.forEach(id => { sections[id].hidden = id !== route; });
       tabs.forEach(t => t.setAttribute('aria-current', t.getAttribute('href') === `#/${route}` ? 'page' : 'false'));
       document.title = {
-        home: 'Soroush Verdi — Academic Website',
-        research: 'Research & Publications — Soroush Verdi',
-        teaching: 'Teaching — Soroush Verdi'
-      }[route] || 'Soroush Verdi';
+        home: 'Prof. Your Name — Academic Website',
+        research: 'Research & Publications — Prof. Your Name',
+        teaching: 'Teaching — Prof. Your Name'
+      }[route] || 'Prof. Your Name';
       // Accessibility: move focus to main when route changes
       document.getElementById('app').focus();
     }
