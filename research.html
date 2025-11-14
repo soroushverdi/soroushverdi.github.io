@@ -1,64 +1,109 @@
+<!-- research.html (Research) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name — Research</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="container">
+    <header>
+        <h1>Your Name</h1>
 
-    <h1 class="name">Your Name</h1>
+        <hr>
 
-    <hr>
-    <div class="navbar">
-        <a href="index.html">Home</a> |
-        <a href="research.html">Research</a> |
-        <a href="publications.html">Publications</a>
-    </div>
-    <hr>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="research.html" class="current">Research</a> |
+            <a href="publications.html">Publications</a>
+        </nav>
 
-    <div class="mission-box">
-        <strong>Mission Statement:</strong>  
-        <p>
-            My research investigates how people evaluate minds: how they judge beliefs, intentions, 
-            emotions, and reasoning. Understanding these processes helps explain disagreement, 
-            responsibility, rationality, and everyday decision-making.
-        </p>
-    </div>
+        <hr>
+    </header>
 
-    <h2>Most recent, important paper</h2>
-    <p>
-        My newest paper, <a href="#">Title of Your Most Recent Paper</a>, presents a new 
-        framework for understanding X and Y.  
-        <a href="#">Show abstract</a>
-    </p>
+    <main class="content">
+        <section>
+            <h2>Mission Statement</h2>
+            <div class="mission-box">
+                <p>
+                    My research aims to develop simple, transparent models that explain complex
+                    academic and technical phenomena. I prioritize clarity over complexity, focusing on
+                    methods and frameworks that can be easily communicated, taught, and replicated by
+                    students and colleagues across disciplines.
+                </p>
+            </div>
+        </section>
 
-    <h2>Overview of research</h2>
-    <p>
-        I study the psychology of belief, metacognition, reasoning, and social judgment — 
-        particularly how people evaluate their own and others’ cognitive states.
-    </p>
+        <section class="recent-paper">
+            <h2>Most recent, important paper</h2>
+            <p>
+                <a href="https://example.com/most-important-paper.pdf">
+                    A Minimal Model of Placeholder Dynamics in Academic Systems
+                </a>
+            </p>
+            <p>
+                <a href="#abstract">Show abstract</a>
+            </p>
+            <div id="abstract" class="abstract">
+                <p>
+                    <strong>Abstract.</strong>
+                    This is placeholder abstract text. In the final version, this section will contain
+                    a concise summary of the main findings, contributions, and implications of the
+                    paper. It will describe the central research question, the methodology used,
+                    and the key results obtained, as well as discuss potential future directions.
+                </p>
+            </div>
+        </section>
 
-    <p>
-        In one line of work, I study the <strong>lay ethics of belief</strong>: 
-        how people think beliefs should form, what they consider rational, and 
-        how they judge biased thinking.
-    </p>
+        <section class="overview">
+            <h2>Overview of research</h2>
 
-    <p>
-        I also study <strong>implicit theories of reasoning</strong>, including how people 
-        attribute responsibility for reasoning errors and when they think beliefs can change.
-    </p>
+            <p>
+                My research program is organized around the idea that simple models, when carefully
+                constructed, can provide deep insights into complex systems. I work at the interface
+                of theory, methodology, and application, with projects ranging from conceptual
+                modeling to empirical validation.
+            </p>
 
-    <ul>
-        <li>How people judge the rationality of beliefs</li>
-        <li>How they assess responsibility for biased thinking</li>
-        <li>How they attribute freedom or control over mental states</li>
-    </ul>
+            <p>
+                A central theme is the development of <em>interpretable frameworks</em> that remain
+                faithful to real-world data while preserving mathematical and conceptual simplicity.
+                This includes work on:
+            </p>
 
+            <ul>
+                <li>Designing minimal models that exhibit realistic behaviors.</li>
+                <li>Developing explanatory tools for communicating model assumptions.</li>
+                <li>Studying robustness and sensitivity of simplified systems.</li>
+            </ul>
+
+            <p>
+                Another focus area concerns the <em>pedagogical value</em> of simple models.
+                I investigate how stripped-down examples can be used to teach complex concepts in
+                undergraduate and graduate curricula, and how they can support students in building
+                intuition before encountering more advanced techniques.
+            </p>
+
+            <p>
+                I also collaborate with researchers in neighboring fields, applying these ideas to
+                domains such as social systems, networked infrastructures, and computational
+                humanities. In these collaborations, my work often centers on aligning modeling
+                assumptions with substantive domain knowledge.
+            </p>
+
+            <p>
+                Future projects plan to extend these foundations to:
+            </p>
+
+            <ul>
+                <li>Cross-disciplinary modeling toolkits for teaching and research.</li>
+                <li>Open, reproducible repositories of simple benchmark models.</li>
+                <li>Methodological guidelines for balancing simplicity and realism.</li>
+            </ul>
+        </section>
+    </main>
 </div>
-
 </body>
 </html>
