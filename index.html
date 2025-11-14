@@ -1,69 +1,62 @@
-<!-- index.html (Home) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Home</title>
+    <title>Your Name — Home</title>
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Your Name</h1>
+    <header class="site-header">
+        <h1 class="site-title">Your Name</h1>
 
-        <hr>
+        <hr class="divider">
 
-        <nav>
-            <a href="index.html" class="current">Home</a> |
-            <a href="research.html">Research</a> |
-            <a href="publications.html">Publications</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <span class="nav-separator">|</span>
+            <a href="research.html">Research &amp; Publications</a>
+            <span class="nav-separator">|</span>
+            <a href="teaching.html">Teaching</a>
         </nav>
 
-        <hr>
+        <hr class="divider">
     </header>
 
     <main class="content">
-        <section class="bio">
-            <img src="https://via.placeholder.com/160x200" alt="Headshot of Your Name" class="headshot">
+        <section class="home-intro">
+            <div class="headshot-wrapper">
+                <!-- Replace with your own image file -->
+                <img src="img/headshot.jpg" alt="Headshot of Your Name" class="headshot">
+            </div>
 
-            <h2>Short Biography</h2>
-            <p>
-                I am an Assistant Professor in the Department of Example Studies at Example University.
-                My research interests lie at the intersection of placeholder theory, example-driven
-                modeling, and the study of simple systems. I received my Ph.D. in Example Science from
-                Placeholder Institute and my undergraduate degree in Sample Studies from Demo College.
+            <p class="bio">
+                I am a PhD candidate in Marketing at [University Name]. My research focuses on consumer behavior,
+                digital marketing, and quantitative methods. I hold an MSc in [Field] from [University Name] and a
+                BA in [Field] from [University Name].
             </p>
-            <p>
-                My work focuses on understanding how minimal models can capture essential features
-                of complex academic, social, and technical systems, with particular attention to
-                transparency, interpretability, and reproducibility.
-            </p>
-        </section>
 
-        <section class="contact">
-            <h3>Contact</h3>
-            <p>
-                Email:
-                <a href="mailto:your.email@university.edu">your.email@university.edu</a>
-            </p>
-        </section>
+            <section class="contact">
+                <h2 class="section-title">Contact</h2>
+                <p>Email: <a href="mailto:your.name@university.edu">your.name@university.edu</a></p>
+            </section>
 
-        <section class="links">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="https://www.example.edu/~yourname">University Webpage</a></li>
-                <li><a href="https://scholar.google.com">Google Scholar</a></li>
-                <li><a href="https://example.com/cv.pdf">Curriculum Vitae (PDF)</a></li>
-            </ul>
+            <section class="links">
+                <h2 class="section-title">Links</h2>
+                <ul>
+                    <li><a href="https://www.university.edu/your-profile" target="_blank" rel="noopener">University Webpage</a></li>
+                    <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </section>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-logo">
-            <img src="https://via.placeholder.com/120x40?text=Logo" alt="University logo">
+    <footer class="site-footer">
+        <div class="footer-logo-wrapper">
+            <!-- Replace with your own university logo image -->
+            <img src="img/university-logo.png" alt="University logo" class="footer-logo">
         </div>
     </footer>
-</div>
 </body>
 </html>
