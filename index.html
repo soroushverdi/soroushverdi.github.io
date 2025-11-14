@@ -1,54 +1,69 @@
+<!-- index.html (Home) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="container">
+    <header>
+        <h1>Your Name</h1>
 
-    <h1 class="name">Your Name</h1>
+        <hr>
 
-    <hr>
-    <div class="navbar">
-        <a href="index.html">Home</a> |
-        <a href="research.html">Research</a> |
-        <a href="publications.html">Publications</a>
-    </div>
-    <hr>
+        <nav>
+            <a href="index.html" class="current">Home</a> |
+            <a href="research.html">Research</a> |
+            <a href="publications.html">Publications</a>
+        </nav>
 
-    <div class="home-layout">
-        <div class="home-text">
+        <hr>
+    </header>
+
+    <main class="content">
+        <section class="bio">
+            <img src="https://via.placeholder.com/160x200" alt="Headshot of Your Name" class="headshot">
+
+            <h2>Short Biography</h2>
             <p>
-                I am an Assistant Professor of [Field] at [Your University].  
-                I study how people think about X, Y, and Z, including how they evaluate beliefs, 
-                make decisions, and form judgments.
+                I am an Assistant Professor in the Department of Example Studies at Example University.
+                My research interests lie at the intersection of placeholder theory, example-driven
+                modeling, and the study of simple systems. I received my Ph.D. in Example Science from
+                Placeholder Institute and my undergraduate degree in Sample Studies from Demo College.
             </p>
-
             <p>
-                Prior to my current appointment, I received my PhD in [Field] from [University], 
-                and my BA in [Field] from [University].  
+                My work focuses on understanding how minimal models can capture essential features
+                of complex academic, social, and technical systems, with particular attention to
+                transparency, interpretability, and reproducibility.
             </p>
+        </section>
 
-            <p><strong>Email:</strong> your.email@university.edu</p>
-
+        <section class="contact">
+            <h3>Contact</h3>
             <p>
-                <strong>Links:</strong><br>
-                <a href="#">University Webpage</a><br>
-                <a href="#">Google Scholar</a>
+                Email:
+                <a href="mailto:your.email@university.edu">your.email@university.edu</a>
             </p>
+        </section>
+
+        <section class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://www.example.edu/~yourname">University Webpage</a></li>
+                <li><a href="https://scholar.google.com">Google Scholar</a></li>
+                <li><a href="https://example.com/cv.pdf">Curriculum Vitae (PDF)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="https://via.placeholder.com/120x40?text=Logo" alt="University logo">
         </div>
-
-        <img src="https://via.placeholder.com/260x260" alt="Headshot" class="headshot">
-    </div>
-
-    <div class="footer-logo">
-        <img src="https://via.placeholder.com/160x60?text=University+Logo" alt="University Logo">
-    </div>
-
+    </footer>
 </div>
-
 </body>
 </html>
