@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soroush Verdi — Home</title>
-  <meta name="description" content="Minimal, accessible academic website for Home, Research & Publications, and Teaching." />
+  <meta name="description" content="Soroush Verdi Website." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -56,9 +56,7 @@
       border-bottom: 1px solid var(--border);
       z-index: 50;
     }
-    .nav {
-      display: flex; align-items: center; gap: 20px; padding: 12px 0;
-    }
+    .nav { display: flex; align-items: center; gap: 20px; padding: 12px 0; }
     .brand { display: flex; align-items: center; gap: 14px; margin-right: auto; }
     .avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); box-shadow: var(--shadow); }
     .brand h1 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: 0.2px; }
@@ -77,20 +75,14 @@
 
     /* ===== Layout ===== */
     main { padding-top: 28px; }
-    .grid {
-      display: grid; grid-template-columns: 1fr; gap: 18px;
-    }
-    @media (min-width: 860px) {
-      .grid { grid-template-columns: 1fr; gap: 24px; }
-    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr; gap: 24px; } }
 
     .card {
       background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
       padding: 22px;
     }
-    .card h2 {
-      font-family: "Source Serif 4", ui-serif, Georgia, serif; font-weight: 600; font-size: 24px; margin: 0 0 8px;
-    }
+    .card h2 { font-family: "Source Serif 4", ui-serif, Georgia, serif; font-weight: 600; font-size: 24px; margin: 0 0 8px; }
     .muted { color: var(--muted); }
 
     /* ===== Lists ===== */
@@ -101,11 +93,13 @@
     .paper { display: grid; gap: 6px; }
     .paper .title { font-weight: 600; }
     .paper .meta { font-size: 14px; color: var(--muted); }
-    .pill {
-      display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 999px;
-      background: color-mix(in oklab, var(--accent) 10%, var(--card)); border: 1px solid var(--border);
-      font-size: 12px; color: var(--muted);
-    }
+    .pill { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 999px; background: color-mix(in oklab, var(--accent) 10%, var(--card)); border: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+
+    /* ===== Bio layout ===== */
+    .bio { display: grid; gap: 16px; align-items: start; }
+    @media (min-width: 720px) { .bio { grid-template-columns: 1fr auto; } }
+    .bio-photo { width: 220px; max-width: 40vw; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+    @media (min-width: 1024px) { .bio-photo { width: 260px; } }
 
     /* ===== Footer ===== */
     footer { margin-top: 36px; padding: 20px 0 40px; color: var(--muted); font-size: 14px; }
@@ -121,11 +115,6 @@
       .card { box-shadow: none; }
       a { text-decoration: none; }
     }
-      /* ===== Bio layout ===== */
-    .bio { display: grid; gap: 16px; align-items: start; }
-    @media (min-width: 720px) { .bio { grid-template-columns: 1fr auto; } }
-    .bio-photo { width: 220px; max-width: 40vw; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
-    @media (min-width: 1024px) { .bio-photo { width: 260px; } }
   </style>
 </head>
 <body>
@@ -151,7 +140,9 @@
   <main class="wrap" id="app" tabindex="-1">
 
     <!-- ===== HOME ===== -->
-    
+    <section id="home" hidden>
+      <div class="grid">
+        <div class="card">
           <h2><span style="white-space:nowrap">Bio</span></h2>
           <div class="bio">
             <div class="bio-text">
@@ -170,7 +161,7 @@
             </div>
             <img class="bio-photo" src="assets/avatar.jpg" alt="Portrait of Soroush Verdi" loading="lazy" />
           </div>
-        
+        </div>
       </div>
 
       <div class="space"></div>
@@ -191,7 +182,7 @@
         <h2>Overview of research</h2>
         <p class="muted">In my <strong>first PhD research project</strong>, I looked at what happens to <strong>people’s donations</strong> when charities <em>create their donation appeals using Generative AI tools and disclose that they have used them!</em> We examined this in the climate change domain to see, first, how people perceive the severity and risk of climate-related threats when the appeals are AI-generated, and second, whether, and how, their donations change as a consequence.</p>
         <p class="muted">In my <strong>second and third PhD research projects</strong>, I study <em>people's cognitive biases</em> in using Generative AI tools.</p>
-        </div>
+      </div>
 
       <div class="space"></div>
 
@@ -201,7 +192,7 @@
           <li>
             <div class="paper">
               <div class="title">AI Disclosure in Environmental Donation Appeals</div>
-              <div class="meta"><strong>Verdi, S.</strong>, Moeini-Jazani, M., & Schwarz, N.  — <em>Submitted, 2025</em> • <a href="mailto:s.verdi@rug.nl">(Email for the draft)</a></div>
+              <div class="meta"><strong>Verdi, S.</strong>, Moeini-Jazani, M., & Schwarz, N. — <em>Submitted, 2025</em> • <a href="mailto:s.verdi@rug.nl">(Email for the draft)</a></div>
             </div>
           </li>
         </ul>
@@ -213,21 +204,9 @@
       <div class="card">
         <h2>Current Courses</h2>
         <ul class="clean">
-          <li>
-            <div class="paper">
-              <div class="title">Building Brands for Impact - University of Groningen (MSc Marketing Management)</div>
-            </div>
-          </li>
-          <li>
-            <div class="paper">
-              <div class="title">Marketing for E&BE - University of Groningen (BSc Economics and Business Economics)</div>
-            </div>
-          </li>
-          <li>
-            <div class="paper">
-              <div class="title">Thesis Supervision (MSc and BSc students)</div>
-            </div>
-          </li>
+          <li><div class="paper"><div class="title">Building Brands for Impact - University of Groningen (MSc Marketing Management)</div></div></li>
+          <li><div class="paper"><div class="title">Marketing for E&BE - University of Groningen (BSc Economics and Business Economics)</div></div></li>
+          <li><div class="paper"><div class="title">Thesis Supervision (MSc and BSc students)</div></div></li>
         </ul>
       </div>
 
@@ -236,12 +215,7 @@
       <div class="card">
         <h2>Past Courses</h2>
         <ul class="clean">
-        
-          <li>
-            <div class="paper">
-              <div class="title">Research Methodology for IB (BSc International Business, 2024)</div>
-            </div>
-          </li>
+          <li><div class="paper"><div class="title">Research Methodology for IB (BSc International Business, 2024)</div></div></li>
         </ul>
       </div>
     </section>
@@ -259,44 +233,60 @@
   </footer>
 
   <script>
-    // Simple hash router for a minimal SPA experience
-    const routes = ["home", "research", "teaching"]; 
-    const sections = Object.fromEntries(routes.map(id => [id, document.getElementById(id)]));
+    // Simple hash router for a minimal SPA experience — hardened against missing sections
+    const routes = ["home", "research", "teaching"];
+    const sections = {};
+    routes.forEach(id => { const el = document.getElementById(id); if (el) sections[id] = el; });
+
     const tabs = Array.from(document.querySelectorAll('[data-route]')).filter(el => el.classList.contains('tab'));
 
     function setActive(route) {
-      routes.forEach(id => { sections[id].hidden = id !== route; });
+      // Fallback: if requested route doesn't exist, pick the first available
+      if (!sections[route]) {
+        const first = Object.keys(sections)[0];
+        route = first || route;
+      }
+      routes.forEach(id => { if (sections[id]) sections[id].hidden = (id !== route); });
       tabs.forEach(t => t.setAttribute('aria-current', t.getAttribute('href') === `#/${route}` ? 'page' : 'false'));
-      document.title = {
-        home: 'Prof. Your Name — Academic Website',
-        research: 'Research & Publications — Prof. Your Name',
-        teaching: 'Teaching — Prof. Your Name'
-      }[route] || 'Prof. Your Name';
-      // Accessibility: move focus to main when route changes
-      document.getElementById('app').focus();
+      document.title = ({
+        home: 'Soroush Verdi — Academic Website',
+        research: 'Research & Publications — Soroush Verdi',
+        teaching: 'Teaching — Soroush Verdi'
+      })[route] || 'Soroush Verdi';
+      const app = document.getElementById('app');
+      if (app) app.focus();
     }
 
     function handleRoute() {
-      const route = location.hash.replace('#/', '') || 'home';
+      const route = (location.hash.replace('#/', '') || 'home');
       if (!routes.includes(route)) { location.hash = '#/home'; return; }
       setActive(route);
     }
 
     window.addEventListener('hashchange', handleRoute);
     window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('year').textContent = new Date().getFullYear();
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+
+      // Basic self-test: ensure all expected sections exist
+      console.assert(!!sections.home, 'Missing <section id="home">');
+      console.assert(!!sections.research, 'Missing <section id="research">');
+      console.assert(!!sections.teaching, 'Missing <section id="teaching">');
+
       handleRoute();
     });
 
     // Enable keyboard navigation for tabs
     const navTabs = document.querySelector('.tabs');
-    navTabs.addEventListener('keydown', (e) => {
-      const current = document.activeElement;
-      const idx = tabs.indexOf(current);
-      if (idx === -1) return;
-      if (e.key === 'ArrowRight') { (tabs[idx + 1] || tabs[0]).focus(); e.preventDefault(); }
-      if (e.key === 'ArrowLeft') { (tabs[idx - 1] || tabs[tabs.length - 1]).focus(); e.preventDefault(); }
-    });
+    if (navTabs) {
+      navTabs.addEventListener('keydown', (e) => {
+        const current = document.activeElement;
+        const idx = tabs.indexOf(current);
+        if (idx === -1) return;
+        if (e.key === 'ArrowRight') { (tabs[idx + 1] || tabs[0]).focus(); e.preventDefault(); }
+        if (e.key === 'ArrowLeft') { (tabs[idx - 1] || tabs[tabs.length - 1]).focus(); e.preventDefault(); }
+      });
+    }
   </script>
 </body>
 </html>
