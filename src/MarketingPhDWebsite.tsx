@@ -90,7 +90,12 @@ function Header({ current, setCurrent }: { current: string; setCurrent: (key: st
       <Container>
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-neutral-900 to-neutral-600 dark:from-neutral-200 dark:to-neutral-500" />
+            <img
+  src="/headshot.jpg"            // or your external URL
+  alt="Soroush Verdi"
+  className="h-9 w-9 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700"
+/>
+
             <div className="flex flex-col">
               <span className="text-base font-semibold tracking-tight text-neutral-900 dark:text-white">Soroush Verdi</span>
               <span className="text-xs text-neutral-500 dark:text-neutral-400">PhD Candidate in Marketing</span>
