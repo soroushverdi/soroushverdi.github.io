@@ -1,6 +1,10 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { Menu, X, Mail, Linkedin, GraduationCap, FileText, Home as HomeIcon, ExternalLink, ArrowRight } from "lucide-react";
 
+// Minimal, responsive, single-file React site styled with TailwindCSS
+// Pages: Home, Research & Publications, Teaching
+// Replace placeholder text/links with your real content. Safe to print/export.
+
 const navItems = [
   { key: "home", label: "Home", icon: HomeIcon },
   { key: "research", label: "Research & Publications", icon: FileText },
@@ -91,11 +95,10 @@ function Header({ current, setCurrent }: { current: string; setCurrent: (key: st
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center gap-3">
             <img
-  src="/headshot.jpg"            // or your external URL
-  alt="Soroush Verdi"
-  className="h-9 w-9 rounded-xl object-cover border border-neutral-200 dark:border-neutral-700"
-/>
-
+              src="/headshot.jpg"  /* place your image at public/headshot.jpg */
+              alt="Soroush Verdi"
+              className="h-9 w-9 rounded-full object-cover border border-neutral-200 dark:border-neutral-700"
+            />
             <div className="flex flex-col">
               <span className="text-base font-semibold tracking-tight text-neutral-900 dark:text-white">Soroush Verdi</span>
               <span className="text-xs text-neutral-500 dark:text-neutral-400">PhD Candidate in Marketing</span>
@@ -161,8 +164,22 @@ function Hero() {
   return (
     <section className="relative">
       <Container>
+        {/* Two-column hero: text + photo. On mobile, text comes first. */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center py-8 md:py-12">
-          <div className="order-1">
+          {/* Photo FIRST on mobile, right on desktop */}
+          <div className="order-1 md:order-2 flex justify-center md:justify-end">
+            <div className="relative h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64">
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-neutral-200 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900" />
+              <img
+                className="relative z-10 h-full w-full rounded-3xl object-cover object-center border border-neutral-200 dark:border-neutral-800"
+                src="/headshot.jpg"
+                alt="Headshot"
+              />
+            </div>
+          </div>
+
+          {/* Text AFTER photo on mobile, left on desktop */}
+          <div className="order-2 md:order-1">
             <div className="mb-3 flex flex-wrap gap-2">
               <Pill>Consumer Behavior</Pill>
               <Pill>Judgment & Decision-Making</Pill>
@@ -171,9 +188,13 @@ function Hero() {
               Soroush Verdi
             </h1>
             <p className="mt-2 text-lg text-neutral-600 dark:text-neutral-300">PhD Candidate in Marketing, University of Groningen</p>
+
+            {/* Bio */}
             <p className="mt-5 max-w-2xl leading-7 text-neutral-700 dark:text-neutral-300">
               I am a PhD Candidate in Marketing at the University of Groningen. My work lies at the intersection of behavioral science and judgment and decision-making. I’m particularly interested in how people think about value, how they interpret prices, justify spending, respond to incentives, and make sense of what feels fair or worthwhile. I study the psychological biases and mental shortcuts that guide these decisions and explore why people sometimes make choices that seem inconsistent or even irrational on the surface.
             </p>
+
+            {/* Research Areas */}
             <div className="mt-6">
               <h3 className="text-sm font-semibold tracking-wide text-neutral-900 dark:text-white uppercase">Research Areas</h3>
               <ul className="mt-3 space-y-2 text-neutral-700 dark:text-neutral-300">
@@ -188,19 +209,10 @@ function Hero() {
                 </li>
               </ul>
             </div>
+
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="mailto:s.verdi@rug.nl" icon={Mail}>Email</Button>
               <Button href="https://www.linkedin.com/in/soroushverdi/" icon={Linkedin} variant="outline">LinkedIn</Button>
-            </div>
-          </div>
-          <div className="order-2 md:order-2 flex md:justify-end">
-            <div className="relative h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-neutral-200 to-neutral-50 dark:from-neutral-800 dark:to-neutral-900" />
-              <img
-                className="relative z-10 h-full w-full rounded-3xl object-cover object-center border border-neutral-200 dark:border-neutral-800"
-                src="/headshot.jpg"
-                alt="Headshot"
-              />
             </div>
           </div>
         </div>
@@ -224,9 +236,12 @@ function ResearchPage() {
         <Container>
           <div className="mb-6 md:mb-8">
             <h1 className="text-xl md:text-2xl font-semibold text-neutral-900 dark:text-white">Research & Publications</h1>
-            <p className="mt-2 text-neutral-600 dark:text-neutral-300 max-w-3xl"></p>
+            <p className="mt-2 text-neutral-600 dark:text-neutral-300 max-w-3xl">
+            </p>
           </div>
+
           <div className="grid grid-cols-1 gap-6 md:gap-8">
+            {/* Overview of research (soft card style) */}
             <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-neutral-900/50 shadow-sm">
               <div className="p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Overview of research</h2>
@@ -240,9 +255,12 @@ function ResearchPage() {
                 </div>
               </div>
             </div>
+
+            {/* Working Papers / Publications (soft card style) */}
             <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-neutral-900/50 shadow-sm">
               <div className="p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Working Papers / Publications</h2>
+
                 <div className="mt-6 space-y-6">
                   <article>
                     <h3 className="text-base md:text-lg font-semibold text-neutral-900 dark:text-white">
@@ -274,7 +292,9 @@ function TeachingPage() {
               Courses I currently teach/supervise and a record of past teaching.
             </p>
           </div>
+
           <div className="grid grid-cols-1 gap-6 md:gap-8">
+            {/* Current Courses card */}
             <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-neutral-900/50 shadow-sm">
               <div className="p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Current Courses</h2>
@@ -291,6 +311,8 @@ function TeachingPage() {
                 </ul>
               </div>
             </div>
+
+            {/* Past Courses card */}
             <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-neutral-900/50 shadow-sm">
               <div className="p-6 md:p-8">
                 <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white">Past Courses</h2>
@@ -328,19 +350,25 @@ export default function MarketingPhDWebsite() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
+    // Prefers-color-scheme sync on first load
     const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     setTheme(prefersDark ? "dark" : "light");
   }, []);
 
+  // Apply theme class to <html> (no visible toggle, respects system preference)
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.documentElement.classList.toggle('dark', theme === 'dark');
     }
   }, [theme]);
 
+  // Runtime sanity checks (micro-tests)
   useEffect(() => {
+    // Test 1: nav items present
     console.assert(navItems.map(n => n.key).join(',') === 'home,research,teaching', 'Expected nav keys to be home,research,teaching');
+    // Test 2: classNames helper
     console.assert(classNames('a', 'b') === 'a b', 'classNames should join non-falsy strings with a space');
+    // Test 3: header exists
     const header = document.querySelector('header');
     console.assert(!!header, 'Header should render');
   }, []);
@@ -361,6 +389,7 @@ export default function MarketingPhDWebsite() {
       <Header current={current} setCurrent={setCurrent} />
       {Page}
       <Footer />
+      {/* Skip link for accessibility */}
       <a href="#main" className="sr-only focus:not-sr-only">Skip to content</a>
     </div>
   );
