@@ -267,7 +267,7 @@ function ResearchPage() {
                       AI Disclosure in Environmental Donation Appeals
                     </h3>
                     <p className="mt-1 text-neutral-700 dark:text-neutral-300">
-                      <span className="font-semibold">Verdi, S.</span>, Moeini-Jazani, M., &amp; Schwarz, N. — <em>Under Review, 2025</em> •{' '}
+                      <span className="font-semibold">Verdi, S.</span>, Moeini-Jazani, M., &amp; Schwarz, N. — <em><strong>Under Review</strong></em>, 2025 •{' '}
                       <a href="mailto:s.verdi@rug.nl" className="underline underline-offset-2 decoration-neutral-300 hover:decoration-neutral-500">Email for the draft</a>
                     </p>
                   </article>
