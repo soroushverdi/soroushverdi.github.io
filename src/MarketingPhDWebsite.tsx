@@ -199,13 +199,13 @@ function Hero() {
               <h3 className="text-sm font-semibold tracking-wide text-neutral-900 dark:text-white uppercase">Research Areas</h3>
               <ul className="mt-3 space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li>
-                  <span className="font-medium text-neutral-900 dark:text-white">• Value Perception</span> — Price Evaluation, Mental Accounting, Fairness and Worth Judgments.
+                  <span className="font-medium text-neutral-900 dark:text-white">• Value Perception</span>: Price Evaluation, Mental Accounting, Fairness and Worth Judgments.
                 </li>
                 <li>
-                  <span className="font-medium text-neutral-900 dark:text-white">• Judgment & Decision-Making</span> — Trade-off Evaluation, Incentive Response, Donation and Prosocial Decisions.
+                  <span className="font-medium text-neutral-900 dark:text-white">• Judgment & Decision-Making</span>: Trade-off Evaluation, Incentive Response, Donation and Prosocial Decisions.
                 </li>
                 <li>
-                  <span className="font-medium text-neutral-900 dark:text-white">• Psychology of AI</span> — AI Influence on People's Decisions, Biases Caused by AI.
+                  <span className="font-medium text-neutral-900 dark:text-white">• Psychology of AI</span>: AI Influence on People's Decisions, Biases Caused by AI.
                 </li>
               </ul>
             </div>
