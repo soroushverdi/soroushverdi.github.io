@@ -212,6 +212,7 @@ function Hero() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="mailto:s.verdi@rug.nl" icon={Mail}>Email</Button>
+              <Button href="CV.pdf" icon={FileText} variant="outline">CV</Button>
               <Button href="https://www.linkedin.com/in/soroushverdi/" icon={Linkedin} variant="outline">LinkedIn</Button>
             </div>
           </div>
