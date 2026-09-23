@@ -106,10 +106,17 @@ img{display:block;max-width:100%}
   gap:28px;
   align-items:flex-start;
 }
-.feature .tagcol{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);white-space:nowrap;padding-top:4px}
+.feature .tagcol{
+  font-weight:800;
+  font-size:11.5px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--accent);
+  padding-top:4px;
+}
 .feature .status{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   gap:8px;
   margin-top:10px;
   color:var(--ink-2);
@@ -117,9 +124,9 @@ img{display:block;max-width:100%}
   text-transform:none;
   letter-spacing:0;
   font-size:13px;
-  width:max-content;
+  width:100%;
 }
-.feature .dot{width:7px;height:7px;border-radius:50%;background:var(--ink);display:inline-block}
+.feature .dot{width:7px;height:7px;border-radius:50%;background:var(--ink);display:inline-block;margin-top:5px;flex-shrink:0}
 .feature h3{font-size:18px;font-weight:700;line-height:1.4;margin-bottom:8px}
 .feature .auth{font-size:14px;color:var(--muted);line-height:1.5}
 .feature .auth b{color:var(--ink);font-weight:700}
